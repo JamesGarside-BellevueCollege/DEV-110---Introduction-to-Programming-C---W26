@@ -1,6 +1,6 @@
 # Week 1: Hello, GitHub - Study Notes
 
-**Name:**
+**Name: James Garside**
 
 ## Development Environment Setup
 
@@ -65,9 +65,9 @@ Answer: This makes it so that the main branch is unaffected by any changes made 
 **Key takeaways from this week:**
 [What are the 3 most important things you learned?]
 
-1. I learned about `git push`
-2. I learned about `git add`
-3. I learned about `git commit`
+1. Learned about `git push`
+2. Learned about `git add`
+3. Learned about `git commit`
 
 **How this connects to professional development:**
 [Why are these skills important for programmers?]
@@ -76,17 +76,17 @@ Answer: Git is frequently used by developers; therefore, learning how to use Git
 
 ## Time Spent
 
-**Total time:** [.3 hours]
+**Total time:** 0.6 hours
 
 **Breakdown:**
 
--   Installing and configuring software: [.05 hours]
--   Learning terminal/command line basics: [0 hours]
--   Writing the "Hello, GitHub!" program: [0.02 hours]
--   Understanding Git workflow: [0.12 hours]
--   Testing and fixing issues: [0.01 hours]
--   Writing documentation: [0.05 hours]
+-   Installing and configuring software: 0.05 hours
+-   Learning terminal/command line basics: 0 hours
+-   Writing the "Hello, GitHub!" program: 0.02 hours
+-   Understanding Git workflow: 0.12 hours
+-   Testing and fixing issues: 0.31 hours (from trying to get tests to work)
+-   Writing documentation: 0.05 hours
 
 **Most time-consuming part:** [Which aspect took the longest and why?]
 
-Answer: Understanding Git workflow because that is what I know the least about.
+Answer: It used to be understanding Git workflow because that is what I know the least about. It is now about the tests feature, because the regex for key takeaways checks that the first word after the number is 3 or more characters long. A better test would be "1\.(\s+\w+){3,}", because that checks for three words.
