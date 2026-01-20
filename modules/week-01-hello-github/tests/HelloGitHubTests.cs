@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using System.Reflection;
+using System.Reflection.Metadata;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HelloGitHub.Tests;
@@ -108,7 +110,7 @@ public class HelloGitHubTests
         {
             string content = File.ReadAllText(studyNotesPath);
 
-            // Check 1: Student name is filled in
+            // Check 1: Student name is filled in. NOTE: [Your Name] does not exist in base document.
             Assert.IsFalse(
                 content.Contains("[Your Name]"),
                 "\n❌ Please replace '[Your Name]' with your actual name at the top of STUDY_NOTES.md\n💡 Tip: Edit the first line: **Name:** Your Actual Name");
@@ -151,7 +153,7 @@ public class HelloGitHubTests
 
             Assert.IsTrue(
                 hasTakeaway1 && hasTakeaway2 && hasTakeaway3,
-                "\n❌ Please complete the 'Key takeaways from this week' list (items 1, 2, and 3)\n💡 Tip: List 3 important things you learned this week");
+                $"\n❌ Please complete the 'Key takeaways from this week' list (items 1, 2, and 3)\n💡 Tip: List 3 important things you learned this week");
 
             // Check 4: Time tracking is filled in
             bool hasTimeTotal = content.Contains("**Total time:**") &&
