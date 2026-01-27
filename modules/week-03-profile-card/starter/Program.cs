@@ -1,3 +1,15 @@
+/**************************************************************
+* Course: DEV 110
+* Term: Winter 2026
+*
+* Programmer: James Garside
+* Assignment: Hello Github
+*
+* Description:
+* When run, askes the user for information and then formats it into a profile card.
+*
+**************************************************************/
+
 using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata;
 
