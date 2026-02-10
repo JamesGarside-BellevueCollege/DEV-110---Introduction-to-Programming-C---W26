@@ -77,8 +77,8 @@ public class Program
                     // Formatting
                     Console.WriteLine(divider);
                     string fullNameFormat = fullName + "]";
-                    Console.WriteLine(string.Format("| [{0,-43} |", fullNameFormat));
-                    Console.WriteLine(string.Format("| Initials: {0} {1,-32} |", firstNameInitial, lastNameInitial));
+                    Console.WriteLine(string.Format("| Name tag: [{0,-33} |", fullNameFormat));
+                    Console.WriteLine(string.Format("| Initials: {0}{1,-33} |", firstNameInitial, lastNameInitial));
                     Console.WriteLine(string.Format("| Lowercase: {0,-33} |", fullName.ToLower())); // Not certain if this is what you mean by "lower case version"
                     Console.WriteLine(divider);
                     break;
@@ -153,22 +153,22 @@ public class Program
                     Console.Write("Enter a closing word: ");
                     string analysisString = Console.ReadLine(); // Didn't use trim because technically the space character could be the first/last of the string.
                     bool checkGoodbye = analysisString.Equals("goodbye", StringComparison.OrdinalIgnoreCase);
-                    string analysisSubstring = analysisString.Length > 3 ? analysisString.Substring(0, 3) : analysisString;
+                    string analysisSubstring = analysisString.Length > 3 ? analysisString.Substring(0, 3) + "'" : analysisString + "'";
                     bool endsExclamationPoint = analysisString.EndsWith('!');
                     int indexOfSpace = analysisString.IndexOf(' ');
 
                     // Formatting
-                    Console.WriteLine($"| Is equal to goodbye: {checkGoodbye,-25}|");
-                    Console.WriteLine($"| substring: {analysisSubstring,-35}|");
-                    Console.WriteLine($"| Ends with !: {endsExclamationPoint,-33}|");
+                    Console.WriteLine($"| Is equal to 'goodbye': {checkGoodbye,-25}|");
+                    Console.WriteLine($"| first 3 letters: '{analysisSubstring,-30}|");
+                    Console.WriteLine($"| Ends with !: {endsExclamationPoint,-35}|");
                     if (indexOfSpace == -1)
                     {
                         // Failure state
-                        Console.WriteLine("| Could not locate space.                       |");
+                        Console.WriteLine("| Index of space not found.                       |");
                     }
                     else
                     {
-                        Console.WriteLine($"| First space at: {indexOfSpace,-30}|");
+                        Console.WriteLine($"| First space at: {indexOfSpace,-32}|");
                     }
 
                     Console.WriteLine("\nGoodbye!");
