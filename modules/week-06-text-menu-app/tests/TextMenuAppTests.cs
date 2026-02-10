@@ -75,7 +75,7 @@ public class TextMenuAppTests
         Assert.IsTrue(
             menuPromptCount >= 2 && hasMenuLine && hasTitle && hasHello && hasGoodbye,
             "❌ Menu loop or exit behavior missing\n" +
-            "💡 Tip: Use a while loop for the menu and ReadIntInRange for input");
+            $"💡 Tip: Use a while loop for the menu and ReadIntInRange for input");
     }
 
     [TestMethod]
@@ -120,7 +120,8 @@ public class TextMenuAppTests
             hasGreeting && hasMessage && hasNameTag && hasInitials && hasLowercase &&
             hasLength && hasDashed && hasWords && hasReceiptHeader && hasCurrency && hasBanner,
             "❌ Menu option output missing or incorrect\n" +
-            "💡 Tip: Make sure all options display the required transformed strings");
+            "💡 Tip: Make sure all options display the required transformed strings"
+            + $"{hasGreeting} && {hasMessage} && {hasNameTag} && {hasInitials} && {hasLowercase} && {hasLength} && {hasDashed} && {hasWords} && {hasReceiptHeader} && {hasCurrency} && {hasBanner}");
     }
 
     [TestMethod]
