@@ -49,7 +49,7 @@ public class Program
             {
                 case 1:
 
-                // Adds a specifried number of students to the roster.
+                    // Adds a specifried number of students to the roster.
                     if (count == rosterCapacity)
                     {
                         Console.WriteLine("Roster is full. Cannot add more students.");
