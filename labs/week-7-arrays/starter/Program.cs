@@ -21,6 +21,11 @@ int count = 0;
 
 int choice = 0;
 
+int x = 5;
+int y = 2;
+
+int temp = 79; if (temp <= 80) Console.WriteLine("Hot"); else Console.WriteLine("Cool");
+
 // Menu loop: repeats until the user chooses 4 (Exit)
 while (choice != 4)
 {
