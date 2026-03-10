@@ -61,7 +61,7 @@ public class Program
         int outputInt;
 
         do
-        { 
+        {
             isValid = int.TryParse(Console.ReadLine(), out outputInt);
 
             if (!isValid || outputInt < min || outputInt > max)
