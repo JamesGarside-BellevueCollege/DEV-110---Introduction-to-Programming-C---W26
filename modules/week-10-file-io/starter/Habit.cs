@@ -20,6 +20,7 @@ namespace HabitTracker;
 public class Habit
 {
     /// <summary>
+    /// Initializes a new instance of the <see cref="Habit"/> class.
     /// Creates a new Habit with the given name, completion status, and frequency.
     /// </summary>
     public Habit(string name, bool isCompleted, string frequency)
@@ -32,7 +33,7 @@ public class Habit
     /// <summary>Gets or sets the name of the habit.</summary>
     public string Name { get; set; }
 
-    /// <summary>Gets or sets whether the habit has been completed.</summary>
+    /// <summary>Gets or sets a value indicating whether gets or sets whether the habit has been completed.</summary>
     public bool IsCompleted { get; set; }
 
     /// <summary>Gets or sets the frequency: "daily" or "weekly".</summary>
@@ -40,7 +41,7 @@ public class Habit
 
     /// <summary>
     /// Prints this habit's status marker, name, and frequency.
-    /// Example: "  [x] Exercise (daily)"  or  "  [ ] Journal (weekly)"
+    /// Example: "  [x] Exercise (daily)"  or  "  [ ] Journal (weekly)".
     /// </summary>
     public void DisplayInfo()
     {

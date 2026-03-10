@@ -203,9 +203,9 @@ public class Program
         // Saves habits
         try
         {
-        string[] lines = habits.Select(h => $"{h.Name},{(h.IsCompleted ? "done" : "pending")},{h.Frequency}").ToArray();
-        File.WriteAllLines(path, lines);
-        Console.WriteLine($"Habits saved to {path}");
+            string[] lines = habits.Select(h => $"{h.Name},{(h.IsCompleted ? "done" : "pending")},{h.Frequency}").ToArray();
+            File.WriteAllLines(path, lines);
+            Console.WriteLine($"Habits saved to {path}");
         }
         catch (FileNotFoundException)
         {
